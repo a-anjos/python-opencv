@@ -1,5 +1,5 @@
 # python-opencv
-Cheatsheet for OpenCV 4.x (Python)
+Cheat sheet for OpenCV 4.x (Python)
 
 The objective of this cheat sheet is not to exhaustively list all possible available OpenCV functions. The objective is to provide a quick reference for some of the most used operations.
 
