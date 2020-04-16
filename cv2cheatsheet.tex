@@ -79,7 +79,7 @@
 \section{I/O}
 \begin{tabular}{@{}ll@{}}
 \mintinline{python}{i = imread("name.png")}    & Loads image as BGR (if grayscale, \texttt{B=G=R})\\
-\mintinline{python}{i = imread("name.png"), IMREAD_UNCHANGED)}    & Loads image as is (inc.\ transparency if available)\\
+\mintinline{python}{i = imread("name.png", IMREAD_UNCHANGED)}    & Loads image as is (inc.\ transparency if available)\\
 \mintinline{python}{i = imread("name.png", IMREAD_GRAYSCALE)} & Loads image as grayscale\\
 \mintinline{python}{imshow("Title", i)} & Displays image $I$\\
 \mintinline{python}{imwrite("name.png", i)} & Saves image $I$\\
@@ -338,8 +338,8 @@ Borders can also be added with custom widths:
 \texttt{b = any(M > 5)} & Returns \mintinline{python}{True} if any element in array $M$ is greater than 5\\
 \texttt{b = all(M > 5)} & Returns \mintinline{python}{True} if all elements in array $M$ are greater than 5\\
 \texttt{rows, cols = where(M > 5)} & Returns indices of the rows and cols where elems in $M$ are >5\\
-\mintinline{python}{coords = list(zip(rows, cols))} & Creates a list with with the elements of \texttt{rows} and \texttt{cols} paired\\
-\mintinline{python}{M_inv = linalg.inv(M)} & Inverse of of $M$\\
+\mintinline{python}{coords = list(zip(rows, cols))} & Creates a list with the elements of \texttt{rows} and \texttt{cols} paired\\
+\mintinline{python}{M_inv = linalg.inv(M)} & Inverse of $M$\\
 \mintinline{python}{rad = deg2rad(deg)} & Converts degrees into radians\\
 \end{tabular}
 \subsubsection{Matplotlib.pyplot (\mintinline{python}{plt.})}
