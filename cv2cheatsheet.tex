@@ -248,8 +248,8 @@ Borders can also be added with custom widths:
 \mintinline{python}{ccs = matchTemplate(i, t, TM_CCORR_NORMED)} & Matches template $T$ to image $I$ (normalized X-correl)\\
 \mintinline{python}{m, M, m_l, M_l = minMaxLoc(ccs)} & Min, max values and respective coordinates in \texttt{ccs}\\
 \mintinline{python}{c = CascadeClassifier()} & Creates an instance of an ``empty'' cascade classifier\\
-\mintinline{python}{r = f.load("file.xml")}& Loads a pre-trained model from file; \texttt{r} is \mintinline{python}{True/False}\\
-\mintinline{python}{objs = f.detectMultiScale(i)} & Returns 1 tuple \texttt{(x, y, w, h)} per detected object\\
+\mintinline{python}{r = c.load("file.xml")}& Loads a pre-trained model from file; \texttt{r} is \mintinline{python}{True/False}\\
+\mintinline{python}{objs = c.detectMultiScale(i)} & Returns 1 tuple \texttt{(x, y, w, h)} per detected object\\
 \end{tabular}
 
 \subsection{Motion and Tracking}
